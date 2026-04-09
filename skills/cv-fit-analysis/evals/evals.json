@@ -1,0 +1,30 @@
+{
+  "skill_name": "cv-fit-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze my fit for this role: reference/Cohere-Product Manager, Platform Experience & Developer Product .htm — I want an honest assessment with a score, the real gaps, and what I should reframe in my CV before applying.",
+      "expected_output": "Structured fit analysis with overall score, requirements table (Strong/Solid/Partial/Gap per requirement), true gaps distinguished from framing gaps, verdict paragraph, and concrete resume framing recommendations. Should NOT mark API versioning or compliance as structural gaps.",
+      "files": [
+        "C:/Users/dmytro.dolinskyi/Documents/GitHub/CV2026/reference/Cohere-Product Manager, Platform Experience & Developer Product .htm",
+        "C:/Users/dmytro.dolinskyi/Documents/GitHub/CV2026/master_resume.yaml"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm looking at a Senior PM role for a developer tools company. The JD says they need: 5+ years PM experience, ownership of APIs and SDKs, strong technical fluency with versioning and backward compatibility, experience with developer consoles and observability dashboards, and ideally familiarity with LangChain/LlamaIndex. How well do I fit? What's my score?",
+      "expected_output": "Fit analysis correctly identifying that API versioning/backward compat, compliance, and async workloads are covered by real experience (even if not obviously stated in CV). LangChain coverage should reference AWS AI Practitioner cert scope. MCP work should be positioned as developer tooling ownership. Score should be moderate-strong (65%+).",
+      "files": [
+        "C:/Users/dmytro.dolinskyi/Documents/GitHub/CV2026/master_resume.yaml"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Quick fit check — there's a PM Infrastructure & Platform role at a cloud AI company. Requirements: platform product experience, API lifecycle ownership, data residency/sovereignty knowledge, multi-tenant deployment models, async batch workloads. Should I bother applying?",
+      "expected_output": "Should NOT flag data residency, multi-tenancy, async workloads, or API lifecycle as absent. Should identify FedRAMP/GDPR context, tenant isolation ownership, ingestion pipeline scale, and feature toggle system as direct evidence. Recommendation should be affirmative (yes, apply) with framing guidance.",
+      "files": [
+        "C:/Users/dmytro.dolinskyi/Documents/GitHub/CV2026/master_resume.yaml"
+      ]
+    }
+  ]
+}
